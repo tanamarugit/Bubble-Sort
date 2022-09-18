@@ -2,7 +2,7 @@ def bubble_sort(ary)
   length = ary.size
 
   (1..length).each do |i|
-    (1..length - 1).each do |l|
+    (1..(length - i)).each do |l|
       r = l - 1
       if ary[r] > ary[l]
         keep = ary[r]
