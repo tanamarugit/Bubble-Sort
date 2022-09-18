@@ -9,12 +9,12 @@ loop do
     if l > r
       number[-2-s] = r
       number[-1-s] = l
-      binding.break 
+      
     end
     s += 1
   end
   number_count -= 1
   break if number_count.zero?
 end
-
-puts number
+binding.break
+p number
