@@ -6,6 +6,7 @@ loop do
   s = 0
   number_count.times do
     l, r = number[-2-s], number[-1-s]
+    binding.break
     if l > r
       number[-2-s] = r
       number[-1-s] = l
@@ -16,5 +17,5 @@ loop do
   number_count -= 1
   break if number_count.zero?
 end
-binding.break
+
 p number
